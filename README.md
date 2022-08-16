@@ -38,4 +38,5 @@ Once you have done with the above command, you would be having the sample server
 Now to add a **package.json** file by initialising the directory as a new npm package. Firstly navigate into the new projects directory and then run **npm init**. You can use the flag -y to skip the various npm package settings.
 
 ```cd serverless-tutorial-rds```
+
 ```npm init -y```
