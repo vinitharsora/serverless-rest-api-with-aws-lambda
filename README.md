@@ -18,3 +18,24 @@ In this article, I’ll be making use of the **Serverless Framework** to build a
 4. Postman, a super handy tool we’ll be using to test our API. Get that here (https://www.postman.com/).
 
 Once you are done with all the pre-requisite installation and setup,we can now proceed ahead in developing the REST API backend application.
+
+# Installing the Serverless Framework CLI
+
+Let’s start by installing the serverless npm package. By using the -g flag, the package is installed globally on your machine.
+
+```npm install -g serverless```
+
+# Creating a new project
+
+```serverless```
+
+Running the command **serverless** will guide you through creating a new serverless project.
+
+Select **AWS Node.js** as your template and then provide a meaningful name for the project. I’ll give my project name as **serverless-tutorial-rds**.
+
+Once you have done with the above command, you would be having the sample serverless framework template folder generated for Node.js app.
+
+Now to add a **package.json** file by initialising the directory as a new npm package. Firstly navigate into the new projects directory and then run **npm init**. You can use the flag -y to skip the various npm package settings.
+
+```cd serverless-tutorial-rds```
+```npm init -y```
