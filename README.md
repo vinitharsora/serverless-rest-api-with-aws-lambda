@@ -40,3 +40,25 @@ Now to add a **package.json** file by initialising the directory as a new npm pa
 ```cd serverless-tutorial-rds```
 
 ```npm init -y```
+
+# Project Structure
+Open the project in your text editor of choice and you’ll see what files were created for us. The **Serverless.yml** file is where we define our functions, the events that trigger them, and the resources they use. The **handler.js** file is where we will maintain the logic for our functions.
+
+![2!](images/2.png)
+
+# Configuring Amazon Credentials
+Before we write any code, let’s configure our amazon credentials to ensure we can deploy our project. In a new tab, open the AWS Management Console and navigate to the IAM service.
+
+![3!](images/3.png)
+
+Select users on the sidebar navigation menu and then press Add user. Make sure for the access type you select programmatic access.
+
+You should now be prompted to add specific permissions. You can add the user to a group, copy permissions from an existing user or attach inline policies directly. For this project, we’ll create a new group. We’ll need the following permissions:
+
+- AmazonRDSFullAccess
+- AWSLambdaFullAccess
+- IAMFullAccess
+- AmazonAPIGatewayAdministrator
+- AWSCloudFormationFullAccess
+
+**Add your user to the newly created group and then proceed to create the user.**
